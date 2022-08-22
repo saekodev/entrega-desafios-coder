@@ -104,6 +104,8 @@ a {
 }
 .imgMesa {
   max-width: 300px;
+  margin: 20px;
+  padding: 20px;
 }
 .formularioMesa form {
   display: flex;
