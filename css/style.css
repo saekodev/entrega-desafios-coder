@@ -24,6 +24,10 @@ font-family: 'Silkscreen', cursive; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation-name: headerColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 .header img {
   width: 180px;
@@ -137,12 +141,14 @@ a {
 .formularioMesa form {
   display: flex;
   align-items: flex-start;
-  margin: 0 auto;
-  padding: 30px;
+  margin: 10px;
+  padding: 20px;
   flex-direction: column;
 }
 input:focus {
   border-radius: 10px;
+  background-color: #d7dde9;
+  transition: .5s;
 }
 .infoMesa {
   display: flex;
@@ -217,9 +223,21 @@ input:focus {
 .gridGaleria img {
   max-width: 300px;
 }
-
-@keyframes identifier {
-  
+ 
+/* KEYFRAMES */
+@keyframes headerColor {
+  0% {
+    background-image: #a3b0e4;
+    transition: 1s;
+  }
+  50% {
+    background-image: #7c3ba1;
+    transition: 1s;
+  }
+  100% {
+    background-image: #8c1ef3;
+    transition: 1s;
+  }
 }
 
 /* MEDIA QUERYS (siempre al final) */
